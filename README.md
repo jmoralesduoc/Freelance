@@ -1,2 +1,2 @@
 # Freelance
-Pagian Web para freelance
+Pagian Web para freelance Duoc
