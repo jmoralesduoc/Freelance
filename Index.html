@@ -30,6 +30,17 @@
           right: 20px;
           z-index: 999;
       }
+      .card {
+            background-color: rgba(255, 255, 255, 0.2); /* Fondo de las cards con transparencia /
+            margin-bottom: 20px; / Espacio entre las cards /
+            margin-top: 20px; / Margen superior para bajar las cards */
+        }
+
+        .card-body {
+            padding: 30px;
+        }
+
+      
   </style>
 
 </head>
@@ -126,6 +137,42 @@
           </button>
       </div>
 
+<!-- Tres cards debajo del carrusel -->
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+          <div class="card">
+              <div class="card-body">
+                <img src="./img/desarrollo_web.jpeg" class="card-img-top" alt="...">
+                  <h5 class="card-title">Desarrollo web</h5>
+                  <p class="card-text">El servicio de desarrollo web implica crear y mantener sitios web para tu negocio. Nos encargamos de diseñar y construir una presencia online efectiva que refleje la identidad de tu marca y atraiga a tus clientes.</p>
+                  <a href="#" class="btn btn-primary">Más información</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+              <div class="card-body">
+                <img src="./img/desarrollo_web.jpeg" class="card-img-top" alt="...">
+                  <h5 class="card-title">Desarrollo de software</h5>
+                  <p class="card-text">Obtén software personalizado y eficiente para tu negocio. Desarrollamos soluciones digitales que potencian tu crecimiento y eficiencia.</p>
+                  <a href="#" class="btn btn-primary">Más información</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Servicio 3</h5>
+                  <p class="card-text">Descripción breve del servicio 3.</p>
+                  <a href="#" class="btn btn-primary">Más información</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
  <!-- Modal -->
  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -147,10 +194,8 @@
   </div>
 </div>
 
-<!-- Botón para abrir el modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Información Complementaria de los Servicios
-</button>
+
+
 
 
 <!-- Carousel wrapper 
