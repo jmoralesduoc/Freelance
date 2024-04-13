@@ -3,74 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios Frelance</title>
-        <!-- Enlace al archivo CSS de Bootstrap -->
-        <link href="./css/bootstrap.min.css" rel="stylesheet">
-        <style>
-          .home-button {
-              position: fixed;
-              top: 20px;
-              right: 20px;
-              z-index: 999;
-          }
-      </style>
+    <title>Servicios Freelance</title>
+    <!-- Enlace al archivo CSS de Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://blog.redigit.es/wp-content/uploads/2019/03/movimiento-freelance-imagen-contenido-freelance-blog-redigit.jpg'); /* Reemplazar 'ruta/a/la/imagen/fondo_freelance.jpg' con la ruta de tu imagen de fondo */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white; /* Color del texto */
+        }
+
+        .container {
+            padding-top: 80px; /* Ajustar según el tamaño del navbar */
+            padding-bottom: 50px; /* Espacio inferior */
+        }
+
+        .home-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 999;
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.5); /* Fondo del navbar con transparencia */
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: white !important; /* Color del texto del navbar */
+        }
+
+        .navbar-toggler-icon {
+            background-color: white; /* Color del icono del botón toggle */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f0f0f0 !important; /* Cambiar color del texto al pasar el mouse */
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Servicios Freelance</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="./Index.html">Inicio </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Login.html">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Contacto</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./Login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Contacto</a>
+                </li>
+            </ul>
         </div>
-      </nav>
+    </nav>
 
+    <div class="container">
+        <h2>Nosotros</h2>
+        <p>Somos un equipo de profesionales independientes apasionados por [tu área de especialización]. Con años de experiencia en la industria, nos hemos destacado por nuestro compromiso con la excelencia y la satisfacción del cliente.</p>
 
-**Nosotros**
+        <h3>Nuestra Misión</h3>
+        <p>Nuestra misión es proporcionar servicios de alta calidad y soluciones innovadoras que satisfagan las necesidades específicas de nuestros clientes. Nos esforzamos por ofrecer resultados sobresalientes en cada proyecto en el que participamos, manteniendo siempre la integridad, la profesionalidad y la ética en nuestro trabajo.</p>
 
-Somos un equipo de profesionales independientes apasionados por [tu área de especialización]. Con años de experiencia en la industria, nos hemos destacado por nuestro compromiso con la excelencia y la satisfacción del cliente.
+        <h3>Nuestros Valores</h3>
+        <ul>
+            <li><strong>Compromiso con la excelencia:</strong> Buscamos siempre superar las expectativas de nuestros clientes, entregando resultados de la más alta calidad en cada proyecto.</li>
+            <li><strong>Colaboración y comunicación:</strong> Creemos en la importancia de la colaboración y la comunicación abierta y transparente con nuestros clientes.</li>
+            <li><strong>Integridad y profesionalismo:</strong> Mantenemos altos estándares de integridad y profesionalismo en todo lo que hacemos.</li>
+            <li><strong>Flexibilidad y adaptabilidad:</strong> Reconocemos la importancia de ser flexibles y adaptarnos a las necesidades cambiantes de nuestros clientes y del mercado.</li>
+        </ul>
 
-**Nuestra Misión**
+        <h3>Nuestros Servicios</h3>
+        <p>Ofrecemos una amplia gama de servicios en [tu área de especialización], incluyendo [lista de servicios que ofreces]. Desde [descripción breve de tu servicio 1] hasta [descripción breve de tu servicio 2], estamos preparados para satisfacer las necesidades de cualquier proyecto, grande o pequeño.</p>
 
-Nuestra misión es proporcionar servicios de alta calidad y soluciones innovadoras que satisfagan las necesidades específicas de nuestros clientes. Nos esforzamos por ofrecer resultados sobresalientes en cada proyecto en el que participamos, manteniendo siempre la integridad, la profesionalidad y la ética en nuestro trabajo.
+        <h3>¡Contáctanos!</h3>
+        <p>Si estás buscando profesionales independientes comprometidos, flexibles y orientados a resultados para tu próximo proyecto, ¡no dudes en ponerte en contacto con nosotros! Estamos aquí para ayudarte a alcanzar tus objetivos y hacer realidad tus ideas.</p>
+    </div>
 
-**Nuestros Valores**
+    <div class="home-button">
+        <a href="Index.html" class="btn btn-primary">Home</a>
+    </div>
 
-En nuestro trabajo como freelancers, nos guiamos por una serie de valores fundamentales que nos definen como profesionales:
-
-- **Compromiso con la excelencia:** Buscamos siempre superar las expectativas de nuestros clientes, entregando resultados de la más alta calidad en cada proyecto.
-  
-- **Colaboración y comunicación:** Creemos en la importancia de la colaboración y la comunicación abierta y transparente con nuestros clientes. Estamos comprometidos a trabajar en estrecha colaboración con ellos para entender sus necesidades y ofrecer soluciones que cumplan con sus objetivos.
-  
-- **Integridad y profesionalismo:** Mantenemos altos estándares de integridad y profesionalismo en todo lo que hacemos. Nos comprometemos a actuar con honestidad, ética y respeto en todas nuestras interacciones profesionales.
-  
-- **Flexibilidad y adaptabilidad:** Reconocemos la importancia de ser flexibles y adaptarnos a las necesidades cambiantes de nuestros clientes y del mercado. Estamos dispuestos a ajustar nuestros enfoques y estrategias según sea necesario para garantizar el éxito de cada proyecto.
-
-**Nuestros Servicios**
-
-Ofrecemos una amplia gama de servicios en [tu área de especialización], incluyendo [lista de servicios que ofreces]. Desde [descripción breve de tu servicio 1] hasta [descripción breve de tu servicio 2], estamos preparados para satisfacer las necesidades de cualquier proyecto, grande o pequeño.
-
-**¡Contáctanos!**
-
-Si estás buscando profesionales independientes comprometidos, flexibles y orientados a resultados para tu próximo proyecto, ¡no dudes en ponerte en contacto con nosotros! Estamos aquí para ayudarte a alcanzar tus objetivos y hacer realidad tus ideas.
-
-<div class="home-button">
-  <a href="Index.html" class="btn btn-primary">Home</a>
-</div>
-
+    <!-- Scripts de Bootstrap (jQuery y JS de Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+zSxm+JHi4yK10DIi0Qa1y/6qHpCJd6L8IF+8oN" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
