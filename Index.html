@@ -7,7 +7,7 @@
     <!--<link rel="stylesheet" href="./css/Styles2.css">-->
     
     <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <script src="./js/bootstrap.bundle.min.js"></script>
+   
     <link rel="stylesheet" href="styles.css">
     <style>
       .carousel-container {
@@ -18,12 +18,19 @@
 
       .carousel-item img {
             width: 300px; /* Ajustar el ancho de las imágenes al carousel */
-            height: 400px; /* Altura fija para todas las imágenes */
+            height: 500px; /* Altura fija para todas las imágenes */
             object-fit: cover; /* Cubrir el área del contenedor con la imagen */
         }
 
   </style>
-
+    <style>
+      .home-button {
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          z-index: 999;
+      }
+  </style>
 
 </head>
 <body>
@@ -87,7 +94,7 @@
               
               <!-- Single item -->
               <div class="carousel-item" data-bs-interval="9000">
-                  <img src="./img/freelancer2.jpeg" class="d-block w-100" alt="Canyon at Night">
+                  <img src="./img/descarga.png" class="d-block w-100" alt="Canyon at Night">
                   <div class="carousel-caption d-none d-md-block">
                     <!-- 
                       <h5>Second slide label</h5>
@@ -118,12 +125,42 @@
               <span class="visually-hidden">Next</span>
           </button>
       </div>
+
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Información</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Información al respecto de los Servicios Freelance</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Botón para abrir el modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Información Complementaria de los Servicios
+</button>
+
+
 <!-- Carousel wrapper 
 <div class="home-button">
   <a href="Index.html" class="btn btn-primary">Home</a>
 </div>
 -->
 
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/jquery-3.6.0.min.js"></script>
 
 </body>
 </html>
