@@ -60,3 +60,11 @@ body, html {
 .black-column li a:hover {
     color: lightgrey; /* Cambia el color del texto al pasar el ratón */
 }
+
+.home-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
