@@ -68,3 +68,31 @@ body, html {
     z-index: 999;
 }
 
+.carousel-container {
+    max-width: 95%; /* Tamaño máximo del carousel */
+    margin: auto; /* Centrar el carousel */
+
+}
+
+.carousel-item img {
+      width: 300px; /* Ajustar el ancho de las imágenes al carousel */
+      height: 500px; /* Altura fija para todas las imágenes */
+      object-fit: cover; /* Cubrir el área del contenedor con la imagen */
+  }
+
+.home-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+}
+.card {
+      background-color: rgba(255, 255, 255, 0.2); /* Fondo de las cards con transparencia /
+      margin-bottom: 20px; / Espacio entre las cards /
+      margin-top: 20px; / Margen superior para bajar las cards */
+  }
+
+  .card-body {
+      padding: 30px;
+  }
+
