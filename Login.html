@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,21 +43,24 @@
                 <div class="card mt-5">
                     <div class="card-body">
                         <h1 class="card-title text-center">Inicio de Sesión</h1>
-                        <form method="post" action="./Login_ingreso.html">
+                        <form id="loginForm" method="post" action="./Login_ingreso.html">
                             <div class="mb-3">
                                 <label for="username" class="form-label">Nombre de Usuario o Correo Electronico</label>
                                 <input type="text" class="form-control" id="username" required>
+                                <div id="emailError" class="text-danger" style="display:none;">Por favor, ingrese un correo electrónico válido.</div>
+                            </div>
                             </div>
                             <div class="mb-3">
                                 <label for="password" class="form-label">Contraseña</label>
                                 <input type="password" class="form-control" id="password" required>
+                                <div id="passwordError" class="text-danger" style="display:none;">La contraseña debe tener al menos 8 caracteres y contener al menos un número.</div>
                             </div>
                             <div class="d-grid gap-2" >
                                 <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
                             </div>
                         </form>
                         <div class="text-center mt-3">
-                            <a href="./reset_pass.html">¿Olvidó su contraseña?</a>
+                            <a href="./olvidocontraseña.html">¿Olvidó su contraseña? </a>
                         </div>
                         <div class="text-center mt-3">
                             ¿No tienes una cuenta? <a href="./registro.html">Regístrate aquí</a>
@@ -68,12 +71,11 @@
         </div>
     </div>
 
-
-    
-
     <div class="home-button">
       <a href="Index.html" class="btn btn-primary">Home</a>
     </div>
-
-</body>
-</html>
+  
+    <script src="./js/validacionesJs.js"></script>
+    
+  </body>
+    </html>
