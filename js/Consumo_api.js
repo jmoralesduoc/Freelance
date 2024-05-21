@@ -6,7 +6,7 @@ $(document).ready(function(){
     var dd = String(today.getDate()).padStart(2, '0');
     var mm = String(today.getMonth() + 1).padStart(2, '0'); // Enero es 0
     var yyyy = today.getFullYear();
-    dd = "21";
+ 
     var fecha = dd + '-' + mm + '-' + yyyy;
 
     $("#fechaSistema").text(fecha);
