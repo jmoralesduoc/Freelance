@@ -110,11 +110,15 @@
       </div>
       <div class="col-md-4">
           <div class="card">
-              <div class="card-body">
+              <div class="card-body" id="tipocambio">
                 <img src="./img/desarrollo_software.jpg" class="card-img-top" alt="...">
-                  <h5 class="card-title">Desarrollo de software</h5>
-                  <p class="card-text">Obtén software personalizado y eficiente para tu negocio. Desarrollamos soluciones digitales que potencian tu crecimiento y eficiencia.</p>
-                  <a href="#" class="btn btn-primary">Más información</a>
+                  <h5 class="card-title">Tipos De cambios Hoy dia <span id="fechaSistema"></span> </h5>
+                  <div class="row">
+                  <table class="table" id="tipocambio">
+                    <thead>
+                    </thead>
+                  </table>
+                </div>
               </div>
           </div>
       </div>
@@ -125,7 +129,9 @@
                   <h5 class="card-title">Desarrollo de aplicaciones moviles</h5>
                   <p class="card-text">
                     Consigue aplicaciones móviles innovadoras y adaptadas a tus necesidades. Creamos apps que mejoran la experiencia de tus usuarios y potencian tu presencia en el mercado.</p>
-                  <a href="#" class="btn btn-primary">Más información</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infomobil">
+                      Mas Información 
+                    </button>
               </div>
           </div>
       </div>
@@ -157,6 +163,29 @@
   </div>
 </div>
 
+<div class="modal fade" id="infomobil" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Información</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>   - Swift y Objective-C (iOS)</p>
+        <p>   - Kotlin y Java (Android) </p>
+        <p>   - JavaScript y TypeScript (Multiplataforma)</p>
+       
+      </div>
+      <div class="modal-footer">
+       <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 
@@ -169,6 +198,6 @@
 
 <script src="./js/bootstrap.bundle.min.js"></script>
 <script src="./js/jquery-3.6.0.min.js"></script>
-
+<script type="text/javascript" src="./js/Consumo_api.js"></script>
 </body>
 </html>
