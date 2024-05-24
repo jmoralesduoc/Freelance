@@ -219,6 +219,30 @@
 <script src="./js/bootstrap.bundle.min.js"></script>
 <script src="./js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="./js/Consumo_api.js"></script>
-<script type="text/javascript" src="./js/validaciones_JM.js"></script>
+<script>
+  
+  $(document).ready(function() {
+    $('a[href="./registro.html"]').hover(
+      function() {
+        $('#registroModal').modal('show');
+      },
+      function() {
+        // Aquí puedes definir si deseas que el modal se cierre automáticamente
+        // cuando el cursor salga del enlace. Si no, puedes dejar este bloque vacío.
+      }
+    );
+  });
+  $('#registroModal').on('hidden.bs.modal', function (e) {
+          if (!e.relatedTarget || e.relatedTarget.id !== 'modalCloseButton') {
+            window.location.href = './registro.html';
+          }
+        });
+
+        // Cerrar el modal cuando se presiona el botón "Cerrar"
+        $('#modalFooterCloseButton').on('click', function() {
+          $('#registroModal').modal('hide');
+        });
+</script>
+  
 </body>
 </html>
