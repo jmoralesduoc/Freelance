@@ -152,6 +152,30 @@
  <div class="home-button">
     <a href="Index.html" class="btn btn-primary">Home</a>
   </div>
+<!-- Agrega el componente de alerta para mostrar la notificación -->
+<div class="alert alert-success" id="registrationSuccessAlert" style="display: none;">
+  ¡Registro completado con éxito! Gracias por unirte a nosotros.
+</div>
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    // Escucha el evento submit del formulario de registro
+    $('#registrationForm').submit(function(event) {
+      // Previene el comportamiento predeterminado de envío del formulario
+      event.preventDefault();
+
+      // Muestra la alerta de registro exitoso
+      $('#registrationSuccessAlert').fadeIn();
+
+      // Después de 3 segundos, oculta la alerta
+      setTimeout(function() {
+        $('#registrationSuccessAlert').fadeOut();
+      }, 3000);
+    });
+  });
+</script>
  
 
 </body>
