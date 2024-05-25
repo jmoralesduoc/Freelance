@@ -94,7 +94,7 @@
   </form>
 </div>
  <div class="home-button">
-    <a href="Index.html" class="btn btn-primary">Home</a>
+    <a  class="btn btn-primary">Home</a>
   </div>
 <!-- Agrega el componente de alerta para mostrar la notificación -->
 <div class="alert alert-success" id="registrationSuccessAlert" style="display: none;">
@@ -125,7 +125,20 @@
     });
   });
 </script>
- 
+<script>
+
+  // Función para mostrar un mensaje de confirmación al hacer clic en el botón "Home"
+        document.querySelector('.home-button').addEventListener('click', function() {
+            // Mostrar un mensaje de confirmación
+            if (confirm('¿Deseas volver a la página de inicio?')) {
+                // Si el usuario confirma, redirigir a la página de inicio
+
+                window.location.href = 'Index.html';
+            }
+        });
+
+      
+    </script>
 
 </body>
 </html>

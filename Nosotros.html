@@ -7,15 +7,6 @@
     <!-- Enlace al archivo CSS de Bootstrap -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <style>
-    /* body {
-        background-image:url('./img/freeeelance.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-color: rgba(255, 255, 255, 0.5);
-    }
-    */
-  
         .container {
             padding-top: 80px; /* Ajustar según el tamaño del navbar */
             padding-bottom: 50px; /* Espacio inferior */
@@ -73,13 +64,30 @@
         <p>Si estás buscando profesionales independientes comprometidos, flexibles y orientados a resultados para tu próximo proyecto, ¡no dudes en ponerte en contacto con nosotros! Estamos aquí para ayudarte a alcanzar tus objetivos y hacer realidad tus ideas.</p>
     </div>
 
+
     <div class="home-button">
-        <a href="Index.html" class="btn btn-primary">Home</a>
+        <a class="btn btn-primary">Home</a>
     </div>
 
+
     <!-- Scripts de Bootstrap (jQuery y JS de Bootstrap) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+zSxm+JHi4yK10DIi0Qa1y/6qHpCJd6L8IF+8oN" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript personalizado -->
+    <script>
+
+  // Función para mostrar un mensaje de confirmación al hacer clic en el botón "Home"
+        document.querySelector('.home-button').addEventListener('click', function() {
+            // Mostrar un mensaje de confirmación
+            if (confirm('¿Deseas volver a la página de inicio?')) {
+                // Si el usuario confirma, redirigir a la página de inicio
+
+                window.location.href = 'Index.html';
+            }
+        });
+
+      
+    </script>
 </body>
 </html>
-
