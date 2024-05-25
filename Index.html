@@ -151,7 +151,7 @@
                   <h5 class="card-title">Desarrollo de aplicaciones moviles</h5>
                   <p class="card-text">
                     Consigue aplicaciones móviles innovadoras y adaptadas a tus necesidades. Creamos apps que mejoran la experiencia de tus usuarios y potencian tu presencia en el mercado.</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infomobil" id="Informacion">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infomobil" id="infoAppMobil">
                       Mas Información 
                     </button>
               </div>
@@ -262,5 +262,22 @@
            
         });
  </script> 
+ <script>
+  document.addEventListener('DOMContentLoaded', function() {
+           const boton = document.querySelector('#infoAppMobil');
+          
+
+           
+           boton.addEventListener('mouseover', function() {
+               boton.style.backgroundColor = 'red';
+           });
+
+           boton.addEventListener('mouseout', function() {
+               boton.style.backgroundColor = '';
+           });
+                       
+          
+       });
+</script> 
 </body>
 </html>
