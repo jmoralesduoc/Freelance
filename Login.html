@@ -72,10 +72,23 @@
     </div>
 
     <div class="home-button">
-      <a href="Index.html" class="btn btn-primary">Home</a>
+      <a  class="btn btn-primary">Home</a>
     </div>
   
     <script src="./js/validacionesJs.js"></script>
+    <script>
+
+      // Función para mostrar un mensaje de confirmación al hacer clic en el botón "Home"
+            document.querySelector('.home-button').addEventListener('click', function() {
+                // Mostrar un mensaje de confirmación
+                if (confirm('¿Deseas volver a la página de inicio?')) {
+                    // Si el usuario confirma, redirigir a la página de inicio
     
+                    window.location.href = 'Index.html';
+                }
+            });
+    
+          
+        </script>
   </body>
     </html>
