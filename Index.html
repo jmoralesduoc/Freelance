@@ -122,7 +122,7 @@
                 <img src="./img/desarrollo_web.jpeg" class="card-img-top" alt="...">
                   <h5 class="card-title">Desarrollo web</h5>
                   <p class="card-text">El servicio de desarrollo web implica crear y mantener sitios web para tu negocio. Nos encargamos de diseñar y construir una presencia online efectiva que refleje la identidad de tu marca y atraiga a tus clientes.</p>
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="Informacion">
                     Mas Información 
                   </button>
                   
@@ -151,7 +151,7 @@
                   <h5 class="card-title">Desarrollo de aplicaciones moviles</h5>
                   <p class="card-text">
                     Consigue aplicaciones móviles innovadoras y adaptadas a tus necesidades. Creamos apps que mejoran la experiencia de tus usuarios y potencian tu presencia en el mercado.</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infomobil">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infomobil" id="Informacion">
                       Mas Información 
                     </button>
               </div>
@@ -242,7 +242,25 @@
         $('#modalFooterCloseButton').on('click', function() {
           $('#registroModal').modal('hide');
         });
+
+        
 </script>
-  
+ <script>
+   document.addEventListener('DOMContentLoaded', function() {
+            const boton = document.querySelector('#Informacion');
+           
+
+            
+            boton.addEventListener('mouseover', function() {
+                boton.style.backgroundColor = 'red';
+            });
+
+            boton.addEventListener('mouseout', function() {
+                boton.style.backgroundColor = '';
+            });
+                        
+           
+        });
+ </script> 
 </body>
 </html>
